@@ -9,34 +9,6 @@
     <title>Светлана Дьякова | Тату мастер (@svet.dyak) • Instagram photos and videos</title>
 
     <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2495341467238877');
-        fbq('track', 'PageView');
-    </script>
-
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=2495341467238877&ev=PageView&noscript=1"
-    /></noscript>
-
-    <script>
-        fbq('trackCustom', 'track_deeplink_sveta');
         document.addEventListener("DOMContentLoaded", mobile_checker())
 
         setTimeout(mobile_checker(), 2000)
@@ -46,7 +18,7 @@
                 document.location.replace("intent://www.instagram.com/svet.dyak/#Intent;package=com.instagram.android;scheme=https;end")
             } else if (navigator.userAgent.match(/iPhone/i)) {
                 document.location.replace("instagram://user?username=svet.dyak")
-            } else if (navigator.userAgent.match(/Mac OS/i)) {
+            } else {
                 document.location.replace("https://www.instagram.com/svet.dyak/")
             }
         }
